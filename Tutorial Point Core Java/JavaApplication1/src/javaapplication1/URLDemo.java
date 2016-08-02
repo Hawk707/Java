@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication1;
+import java.net.*;
+        import java.io.*;
+/**
+ *
+ * @author haytham
+ */
+public class URLDemo {
+    public static void main(String [] args){
+        try
+        {
+            URL url = new URL("http://www.amrood.com/index.html?language=en#j2se");
+            
+            System.out.println("URL is " + url.toString());
+            System.out.println("protocol is "+ url.getProtocol());
+            System.out.println("authority is " + url.getAuthority());
+            System.out.println("file name is " + url.getFile());
+            System.out.println("host is " + url.getHost());
+            System.out.println("path is " + url.getPath());
+            System.out.println("port is "+ url.getPort());
+            System.out.println("default port is " + url.getDefaultPort());
+            System.out.println("query is " + url.getQuery());
+            System.out.println("ref is " + url.getRef());
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+}

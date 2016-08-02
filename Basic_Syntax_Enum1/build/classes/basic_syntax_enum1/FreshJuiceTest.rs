@@ -1,0 +1,3 @@
+basic_syntax_enum1.FreshJuiceTest
+basic_syntax_enum1.FreshJuice$FreshJuiceSize
+basic_syntax_enum1.FreshJuice
